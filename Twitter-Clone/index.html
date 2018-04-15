@@ -9,8 +9,33 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
+    <div id="myTweet" class="overlay justify-content-center align-items-center">
+        <button class="overlay-exit" onclick="closeTweet()">x</button>
+        <div class="card w-50 container">
+            <div class="card-body row">
+                <div class="col d-flex justify-content-center">
+                        <img src="img/anon_img.jpg" alt="..." class="profile-pic rounded-circle">
+                </div>
+                <div class="col-11">
+                    <div class="container">
+                        <h6 class="mt-1">
+                            <strong>Anon</strong>
+                            <span class="text-primary font-weight-light">@user_anon</span>
+                            &#183;
+                            <span class="text-muted">24m</span>
+                        </h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur optio, unde corrupti tenetur ratione quisquam incidunt voluptate, accusamus cum dolor et nisi harum eius adipisci iure commodi omnis officiis! Aliquam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <form class="form-inline my-2 my-lg-0  ml-auto">
@@ -34,7 +59,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur optio, unde corrupti tenetur ratione quisquam incidunt voluptate, accusamus cum dolor et nisi harum eius adipisci iure commodi omnis officiis! Aliquam!</p>
                     <div class="tweet-options">
                         <button class="btn btn-light tweet-comment"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
-                        <button class="btn btn-light tweet-expand"><i class="fa fa-expand" aria-hidden="true"></i></button>
+                        <button class="btn btn-light tweet-expand" onclick="openTweet()"><i class="fa fa-expand" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
