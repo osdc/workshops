@@ -3,7 +3,27 @@
     height: 40px;
 }
 
-.tweet-options{
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-exit{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    right: 5vw;
+    font-size: 2em;
+    line-height: 2em;
     outline: none;
     border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
 }
